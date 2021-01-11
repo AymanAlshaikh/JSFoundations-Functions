@@ -8,7 +8,10 @@
  */
 function greet(name) {
   // Your code here
+  console.log('Hello ' +name)
 }
+//let greeting = greet('Hamza');
+//console.log('Hello '+greeting)
 
 /**
  * isOdd(n):
@@ -21,7 +24,10 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  return n % 2 !== 0;
 }
+//let number = isOdd(4);
+//console.log(number)
 
 /**
  * oddsSmallerThan(n):
@@ -34,7 +40,10 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  return parseInt(n/2);
 }
+//let odds = oddsSmallerThan(15);
+//console.log(odds)
 
 /**
  * squareOrDouble(n):
@@ -48,6 +57,10 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n % 2 === 0) return(n*2)
+  else return(Math.pow(n, 2))
 }
+//let SOD=squareOrDouble(5);
+//console.log(SOD)
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
